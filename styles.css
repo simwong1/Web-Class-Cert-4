@@ -1,3 +1,37 @@
+:root {
+    /* CSS HEX */
+    --puce: #c6878fff;
+    --blue-jeans: #5aa9e6ff;
+    --light-sky-blue: #7fc8f8ff;
+    --cultured: #f9f9f9ff;
+    --minion-yellow: #ffe45eff;
+}
+
 body{
-    background-color: rgb(150, 174, 226);
+    background-color: var(--puce);
+}
+
+.header {
+    background-color: var(--light-sky-blue);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.navigation a {
+color: var(--minion-yellow);
+padding: 20px;
+text-decoration:none;
+font-size: 28px;
+
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    width: 100px;
+    padding: 15px;
 }
