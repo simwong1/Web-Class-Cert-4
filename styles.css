@@ -9,6 +9,7 @@
 
 body{
     background-color: var(--puce);
+    margin:0px;
 }
 
 .header {
