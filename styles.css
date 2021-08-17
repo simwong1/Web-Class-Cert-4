@@ -10,6 +10,9 @@
 body{
     background-color: var(--puce);
     margin:0px;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
 .header {
@@ -35,4 +38,34 @@ font-size: 28px;
 .logo {
     width: 100px;
     padding: 15px;
+}
+
+.footer {
+    background-color: var(--cultured);
+}
+
+footer.navigation {
+    display: flex
+    flex-direction: row;
+    padding: 180px;
+}
+
+.footer {
+    background-color: var(--light-sky-blue);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    min-width: 150px;
+    justify-content: space-between;
+}
+
+.social a{
+    color: crimson;
+    font-size: 32px;
 }
