@@ -1,0 +1,175 @@
+<!--Flip card with Text-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+/* The flip card container - set the width and height to whatever you want. 
+    We have added the border property to demonstrate that the flip itself 
+    goes out of the box on hover (remove perspective if you don't want the 3D effect) */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* 3D effect */
+  padding: 20px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: rgb(68, 233, 211);
+  color: white;
+  transform: rotateY(180deg);
+}
+</style>
+
+
+</head>
+<body>
+
+<h1>Card Flip with Text</h1>
+<h3>Hover over the image below:</h3>
+
+<div class="row">
+    <div class="column">
+        <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="images/tv.jpg" alt="tv" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+                <h1>Entertainment</h1> 
+                <p>Two TVS will keep everyone </p>
+                <p>happy along with a DVD player,  </p> 
+                <p>stereo system and games galore. </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="images/Living Area.jpg" alt="living room" style="width:300px;height:300px;">
+                </div>
+            <div class="flip-card-back">
+                <h1>Spacious Living Area</h1> 
+                    <p>Your luxury apartment consists of a spacious separate living area with leather furniture overlooking a private garden for you to enjoy. </p>
+                    <p>happy along with a DVD player,  </p> 
+                    <p>stereo system and games galore. </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="images/kitchen2.jpg" alt="living room" style="width:300px;height:300px;">
+                </div>
+            <div class="flip-card-back">
+                <h1>Spacious Living Area</h1> 
+                    <p>Your luxury apartment consists of a spacious separate living area with leather furniture overlooking a private garden for you to enjoy. </p>
+                    <p>happy along with a DVD player,  </p> 
+                    <p>stereo system and games galore. </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="images/Bathroom Tub.jpg" alt="bathroom" style="width:300px;height:300px;">
+                </div>
+            <div class="flip-card-back">
+                <h1>Luxurious Bathroom</h1> 
+                    <p>Your luxury apartment consists of a spacious separate living area with leather furniture overlooking a private garden for you to enjoy. </p>
+                    <p>happy along with a DVD player,  </p> 
+                    <p>stereo system and games galore. </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

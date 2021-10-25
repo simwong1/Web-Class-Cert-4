@@ -1,0 +1,1046 @@
+
+/* background-color blur */
+--color: white;
+--color: snow; 
+/* Headings/Titles colors */
+--color:pink;
+--color: palevioletred;
+--color: indianred;
+--color: lightcoral;
+--color: tomato;
+--color: crimson;
+/* background-color & borders */
+--color: cyan;
+--color: aquamarine;
+--color: turquoise;
+/* borders color */
+--color: steelblue;
+--color: lightskyblue;
+--color: navy;
+/* button color */
+--color: darkorange;
+--color: rosybrown;
+--color: tomato;
+--color: magenta;
+--color: chartreuse;
+--color: sandybrown;
+--color: mediumspringgreen;
+/* background-color */
+--color: azure;
+--color: gainsboro;
+--color: silver;
+--color: lightslategray;
+/* other colors */
+
+/* Main Body */
+
+* {
+    box-sizing: border-box;
+}
+
+/* Style the body Center the webpage*/
+body {
+    background-color: var(--aero-blue);
+    font-family: Verdana, sans-serif;
+    margin: 0;
+}
+
+/* Center and scale the image */
+.banner {
+	background-image: url('images/Beachchair2.jpg');
+    width: 100%;
+    background-size: cover; 
+    background-position: bottom;
+    display: flex;
+    max-height: 60vh;
+    background-color:#5ac9dd;
+}
+
+/* Banner Title */
+.bannertitle {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    color: white;
+    position: relative;
+    left:1em;
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+/* Increase the font size of the heading */
+.banner h1 {
+    font-size: 84px;
+    font-family: rage;
+    color: white;
+    padding-bottom: none;
+}
+
+/* Needed to position the navbar */
+.header {
+    overflow: hidden;
+    background-color:#5ac9dd;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-height: 50px;
+    padding-top: 30px;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+
+
+.logo {
+    width: 300px;
+    align-items: bottom;
+    padding: 2px, 2px;
+}
+
+
+/* Button Style for All */
+.button {
+    display: inline block;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 6px 12px;
+    line-height: 1.5;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    width: 100px;
+    border-radius: 4px;
+    background-color: orange;
+    color: white;
+    border: 1px solid gainsboro;
+    text-decoration: none;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: steelblue;
+}  
+
+
+/* Sticky navbar - toggles between relative and fixed,
+depending on the scroll position. It is positioned relative
+until a given offset position is met in the viewport
+then it "sticks" in place (like position:fixed).*/
+
+/* The navbar */
+.navigation {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    overflow: hidden;
+    background-color: transparent;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Style the navigation bar links */
+.navigation a {
+    display: block;
+    font-size: 18px;
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.navigation a:hover {
+    background-color: whitesmoke;
+    color: coral;
+}
+
+/* Active/current link */
+.navigation a.active {
+    background-color: whitesmoke;
+    color: lightcoral;
+  }
+  
+.dropdown {
+    position: relative;
+}
+  .dropdown > a::after {
+    content: "\25bc";
+    font-size: 90%;
+    margin-left: 0.5em;
+}
+.dropdown:hover .dropdown-menu {
+    max-height: 300px;
+}
+.dropdown-menu {
+    position: absolute;
+    background-color: lightpink;
+    z-index: 999;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+.dropdown-menu a {
+    white-space: nowrap;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    color: indianred;
+    font-family: 'Segoe UI', arial, sans-serif;
+    text-align: center;
+    font-weight: 400;
+}
+
+.container {
+	width: 100%;
+	display: flex;
+  background-color: white;
+}
+
+  /* Create two unequal columns that sits next to each other */
+  /* Right Column */
+.rightside {
+    flex: 50%;
+    background-color:ghostwhite;
+    padding: 20px;
+}
+  
+  /* Left column */
+.leftside {   
+    flex: 50%;
+    padding-right: 15px;
+    background-color:ghostwhite;
+}
+
+.cardtext{
+    margin-top: 5px;
+    background-color: silver;
+    color: white;
+    justify-content: space-between;
+}
+
+/* Center Content on Page. */
+.content {
+    max-width: 1280px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+}
+
+.maintext h1{
+    font-size: 36px;
+}
+
+.text-center {
+    display: block;
+    width: 100%;
+    font-family: Verdana, sans-serif;
+	  text-align: center;
+    padding: 2px;
+    background: white;
+    color: darkgray;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 6px;
+}
+
+.container-fluid ::before,
+.container-fluid ::after{
+    display: table;
+    content: " ";
+    clear: both;
+}
+
+.row {
+ margin-right: 0;
+ margin-left: 0;
+}
+
+.col promo {
+    flex: 33.33%;
+    background-color: white;
+    position: relative;
+    padding: 20px;
+}
+.promo-item {
+    height: 200px;
+    line-height: 180px;
+    text-align: center;
+}
+
+.promo-item:hover {
+    background-size: 110%; 
+    border: 5px solid #9ddce0;
+    line-height: 170px;
+}
+
+.promo-item h3 {
+    font-size: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+}
+
+.item-1 {
+	background: url('../images/dog\ unwind2.jpg');
+}
+	
+.item-2 {
+	background: url('../images/Cat\ Relax.jpg');
+}
+	
+.item-3 {
+	background: url('../images/Dog\ Welcome.jpg');
+}
+		
+.item-1,
+.item-2,
+.item-3 {
+	background-size: cover;
+	background-position: 20% 30%;
+}
+
+.video {
+	aspect-ratio: 16/9;
+	height: 50vh;
+  max-width: 100%;
+	background-color: lightcoral;
+}
+	
+.video iframe {
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+
+.infotext {
+    padding: 10px 20px;
+    height: 50vh;
+    background-color:silver;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+.cardtext {
+    padding: 18px 16px;
+    height: 50vh;
+}
+
+.cardtext::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.fpcol-container {
+	  display: flex;
+    float: left;
+    width: 25%;
+    margin-bottom: 5px;
+    padding: 0 4px;
+}
+
+.Promo-title h1 {
+    width: 100%;
+    align-content: center;
+    display: block;
+    color: sandybrown;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: 30;
+}
+
+.featured-product {
+	flex:1;
+	padding: 5px;
+	background-color:transparent;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 5px;
+}
+
+
+.featured-product > img,
+.featured-product > a > img {
+	height: 200px;
+  width: 100%;
+}
+
+.featured-product h3 {
+  color: indianred;
+  font-weight: 500;
+	font-size: 22px;
+  text-align: left;
+}
+
+.featured-product .price {
+	color: #dd845a;
+	font-size: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+	
+.featured-product .price s {
+	color: #999;
+	font-size: 18px;
+}
+
+.phone {
+    background-color: sandybrown;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    min-height: 20px;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.tri3column {
+    flex: 35%;
+    background: gainsboro;
+    padding 10px 30px;
+    float: left;
+    position: relative;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.qtrcolumn {
+    flex: 15%;
+    direction: flex-end;
+} 
+
+.directbox img {
+    display: cover;
+    width: 100%;
+	background-position: 20% 30%;
+}
+
+.map {
+	height: 350px;
+	width: 100%;
+	background-size: cover;
+	border-color: #c0bfbf;
+    aspect-ratio: 16/9;
+}
+
+.map iframe {
+	width: 100%;
+	height:100%;
+	display: block;
+}
+  
+  /* End of Homepage Main Body */
+
+  /* Footer section */
+.footer-info {
+    padding: 10px 0;
+    border-color: gray;
+    background: snow;
+}
+
+.footer-info,
+.footer-info a:link,
+.footer-info a:hover,
+.footer-info a:focus,
+.footer-info a:visited {
+    color:steelblue;
+	}
+
+.footer-info h3 {
+	color:steelblue;
+    font-weight: bold;
+	font-size: 16px;
+    padding-right: 2rem;
+	}
+    
+.footer-info-item {
+    padding: 0px 10px;
+    text-align: center;
+    color:tomato;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ul.no-bullets {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.input-group {
+    line-height: 5;
+}
+
+.triplecolumn {
+    display: flex;
+    background: gainsboro;
+    padding-top: 50px;
+    flex: 33.33%;
+    padding: 10px;
+    float: left;
+    position: relative;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.small-print {
+  display: block;
+  width: 100%;
+  font-size: 13px;
+  color:steelblue;
+  padding: 5px 5px;
+  text-align: center;
+}
+
+ <!--end of body for Home page-->
+
+/* *********************************************************************************** */
+  /* About Us Page CSS */
+
+  /* <!--About our Apartment--> */
+
+.Aptpic img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* <!-- Flip Card for Facilities --> */
+
+ /* Float four columns side by side */
+.flipcolumn {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+  
+  /* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+  /* Style the counter cards */
+.flipcont-card {
+    box-shadow: 0 4px 8px 0 silver);
+    padding: 0, 10px;
+    text-align: center;
+    background-color: gainsboro;
+}
+
+  /* The flip card container -
+      Added the border property to demonstrate that the flip itself 
+      goes out of the box on hover 
+      Added perspective to create the 3D effect) */
+
+.flip-card { 
+    background-color: transparent;
+    width: 350px;
+    height: 300px;
+    border: 1px solid azure;
+    perspective: 1000px; /* 3D effect */
+}
+  
+  /* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 gainsboro;
+}
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+  
+  /* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+  
+  /* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    background-color: silver;
+    color: black;
+}
+  
+  /* Style the back side */
+.flip-card-back {
+    background-color: #46d1db;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+/* About Us page Testimonial */
+
+.ttcolumn h2 {
+    font-size: 32px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center ;
+    color: white;
+    background-color:transparent;
+
+}
+/*  */
+ /* * { */
+    /* box-sizing: border-box; */
+/* } */
+
+  /* Create four equal columns that floats next to each other */
+.ttcolumn {
+    float: left;
+    width: 25%;
+    padding: 30px;
+    color: gainsboro;
+    background: url('../images/quoteicon4.jpg');
+}
+  
+  /* Clear floats after the columns */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Scolling Text */
+.scollingtext {
+  height: 50px;	
+  overflow: hidden;
+  position: relative;
+  background-color: gainsboro;
+}
+
+.scollingtext h2 {
+  font-size: 3em;
+  font-style: italic;
+  font-family: 'Lucida Sans', sans-serif;
+  color:salmon;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+
+  /* Starting position */
+-moz-transform:translateX(100%);
+-webkit-transform:translateX(100%);	
+transform:translateX(100%);
+
+  /* Apply animation to this element */	
+-moz-animation: scollingtext 15s linear infinite;
+-webkit-animation: scollingtext 15s linear infinite;
+animation: scollingtext 15s linear infinite;
+}
+
+  /* Move it (define the animation) */
+@-moz-keyframes scollingtext {
+  0%   { -moz-transform: translateX(100%); }
+  100% { -moz-transform: translateX(-100%); }
+ 
+}
+@-webkit-keyframes scollingtext {
+  0%   { -webkit-transform: translateX(100%); }
+  100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes scollingtext {
+  0%   { 
+-moz-transform: translateX(100%); /* Firefox bug fix */
+-webkit-transform: translateX(100%); /* Firefox bug fix */
+transform: translateX(100%); 		
+}
+  100% { 
+-moz-transform: translateX(-100%); /* Firefox bug fix */
+-webkit-transform: translateX(-100%); /* Firefox bug fix */
+transform: translateX(-100%); 
+}
+}
+
+/* Price and T&C Section */
+/* Create three equal columns that floats next to each other */
+
+.PTColumn {
+  float: left;
+  width: 33.3%;
+  color: white;
+  padding: 3em;
+  line-height: 30px;
+  padding: 25px;
+  height: 420px; 
+}
+
+.PTColumn h2 {
+    color: white;
+    font-size: 32px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.PTColumn button {
+    align-items: center;
+    align-self: center;
+}
+
+<!-- Flickity Carousel for Local Attractions-->
+
+.slideshow {
+  min-width: 100vw; 
+  margin-bottom: 3em;
+	background-color: lightcoral;
+}
+  
+.slide img  {
+  width: 100vw;
+  height: 90vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+.pfcolumn {
+  flex:33.33%;
+}
+
+.pf1col {
+  flex:33.33%;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.pf2col {
+  flex:33.33%;
+  color: white
+}
+
+.p3col {
+  flex:33.33%;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* .carousel-cell { */
+/* 	display: block; */
+/* 	position: relative; */
+/* 	width: 1200px; */
+/* 	height: 400px; */
+/* 	background: mediumspringgreen; */
+/* 	border-radius: 8px; */
+/* 	margin-bottom: 5em; */
+/* 	counter-increment: carousel-cell; */
+/* } */
+/*    */
+  /* cell number */
+/* .carousel-cell:before { */
+/* 	display: block; */
+/* 	text-align: center; */
+/* 	content: counter(carousel-cell) */;
+/* 	line-height: 10px; */
+/* 	font-size: 80px; */
+/* 	color:tomato; */
+/* } */
+/*  */
+/* .carousel-cell img { */
+/* 	width: 1200px; */
+/* 	height: 500px; */
+/* 	border: 1px solid white); */
+/* 	object-fit: cover; */
+/* 	align-items: center; */
+/*   } */
+/*  */
+/* .flexbox {     */
+    /* display: -webkit-flex;     */
+    /* display: -ms-flexbox;    */
+    /* display: flex; */
+    /* overflow: hidden; */
+  /* } */
+  /* .flexbox .fbcol { */
+    /* flex: 1; */
+    /* padding: 20px; */
+  /* } */
+  /* .flexbox .fbcol:nth-child(1) {  */
+    /* background: gainsboro;  */
+    /* -webkit-order: 1;  */
+        /* -ms-flex-order: 1;  */
+            /* order: 1; */
+  /* } */
+  /* .flexbox .fbcol:nth-child(2) {  */
+    /* background: silver; */
+    /* -webkit-order: 0; */
+        /* -ms-flex-order: 0; */
+            /* order: 0; */
+  /* } */
+  /* .flexbox .fbcol:nth-child(3) {  */
+    /* background: whitesmoke; */
+    /* -webkit-order: 2; */
+        /* -ms-flex-order: 2; */
+            /* order: 2; */
+  /* } */
+  /* .flexbox .fbcol:nth-child(4) {  */
+    /* background: gray; */
+    /* -webkit-order: 3; */
+        /* -ms-flex-order: 3; */
+            /* order: 3; */
+  /* } */
+  /* body { */
+    /* padding: 20px; */
+  /* } */
+/*  */
+
+/* Column container */
+.row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+  }
+  
+  /* Create two unequal columns that sits next to each other */
+  /* Side left column */
+.pf1col {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+  
+  /* Middle column */
+.pf2col {   
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: silver;
+    padding: 20px;
+}
+  
+  /* Side Right column with 2 images*/
+
+.pf3col {
+    -ms-flex: 40%; /* IE10 */
+    flex: 40%;
+    background-color: snow;
+    width: 100%;
+    padding: 20px;
+}
+
+
+  /* *********************************************************************************** */
+
+  /* Contact Us Page CSS */
+
+  /* Style inputs */
+input[type=text], input[type=date], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    margin: 8px 0;
+    resize: vertical;
+    border-radius: 4px;
+    outline: none;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+  
+input[type=submit] {
+    background-color: rosybrown;
+    color: white;
+    font: 1em sans-serif;
+    padding: 12px 20px;
+    border-radius: 4px;
+    border-color: azure;
+    float: right;
+    cursor: pointer;
+}
+  
+input[type=submit]:hover {
+    background-color: steelblue;
+}
+  
+input[type=chat] {
+    width: 150px;
+    background-color: limegreen;
+    color: white;
+    font: 1em sans-serif;
+    padding: 12px 10px;
+    border-radius: 4px;
+    border-color: azure;
+    float: left;
+    cursor: pointer;
+}
+  
+  /* space from the left side of the input for icons */
+.inputWithIcon input[type="text"] { 
+    padding-left: 40px;
+}
+  
+  /* background color for the icon */
+.inputWithIcon i {
+    background-color: #aaa;
+    color: #fff;
+    padding: 15px 15px;
+    border-radius: 4px 0 0 4px;
+}
+
+  /* Keep the relative position for the inputWithIcon class but  */
+  /* use absolute position for the i element that contains the Font Awesome icon.  */
+  /* Similarly, specify the left value as 0, padding, and color property for the icon. */ 
+
+.inputWithIcon {
+    position: relative;
+}
+   
+.inputWithIcon i {
+    position: absolute;
+    left: 0;
+    top: 9px;
+    padding: 13px 6px;
+    color: white;
+    transition: 0.3s;
+}
+  
+  /* Style the container/contact section */
+.contactcontainer {
+    border-radius: 8px;
+    background-color: gainsboro;
+    margin: 0 auto;
+    padding: 20px 20px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
+}
+  
+  /* Create three columns that float next to eachother */
+.column3pt {
+    float: left;
+    width: 33.33%;
+    margin-top: 6px;
+    padding: 10px;
+}
+
+.column3pt img {
+    margin-top: 10px;
+}
+
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/*    */
+/* .sr-only { */
+  /* position: absolute; */
+  /* width: 1px; */
+  /* height: 1px; */
+  /* padding: 0; */
+  /* margin: -1px; */
+  /* overflow: hidden; */
+  /* clip: rect(0,0,0,0); */
+  /* border: 0; */
+/* } */
+  
+.form-control-feedback {
+  position: absolute;
+  top: 25px;
+  right: 0;
+  z-index: 2;
+  width: 34px;
+  height: 34px;
+  text-align: center;
+}
+
+
+
+/* *********************************************************************************** */
+/* Gallery Page CSS */
+
+
+/* *********************************************************************************** */
+  /* Responsive CSS */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .example {background: pink;}
+}
+
+
+/* Large devices (laptops/desktops, 900px and up) */
+  /* Responsive layout - makes a two column-layout instead of four columns */
+@media only screen and (min-width: 900px) {
+.col-container,
+.flipcolumn,
+.ttcolumn,
+.PTCcolumn {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+}
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .example {background: royalblue;}
+} 
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+  /* Responsive layout - makes the two columns stack on top of each other */
+@media only screen and (min-width: 600px) {
+.col-container,
+.flipcolumn,
+.ttcolumn,
+.PTCcolumn,
+.column3pt, input[type=submit] {
+	  display: block;
+	  width: 100%;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .example {background: red;}
+}

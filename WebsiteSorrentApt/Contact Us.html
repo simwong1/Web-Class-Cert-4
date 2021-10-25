@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Font Awesome CSS -->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
+<!-- Sorrento CSS -->
+<link rel="stylesheet" href="sorrento.css">
+<!-- Load an icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.c
+
+</head>
+
+
+<!-- <style> -->
+
+/* body { */
+/*   font-family: Arial, Helvetica, sans-serif; */
+/* } */
+/*  */
+/* * { */
+/*   box-sizing: border-box; */
+/* } */
+/*  */
+Style inputs
+/* input[type=text], input[type=date], select, textarea { */
+/*   width: 100%; */
+/*   padding: 12px; */
+/*   border: 2px solid #ccc; */
+/*   margin: 8px 0; */
+/*   resize: vertical; */
+/*   border-radius: 4px; */
+/*   outline: none; */
+/*   box-sizing: border-box; */
+/*   transition: 0.3s; */
+/* } */
+/*  */
+/* input[type=submit] { */
+/*   background-color: rosybrown; */
+/*   color: white; */
+/*   font: 1em sans-serif; */
+/*   padding: 12px 20px; */
+/*   border-radius: 4px; */
+/*   border-color: azure; */
+/*   float: right; */
+/*   cursor: pointer; */
+/* } */
+/*  */
+/* input[type=submit]:hover { */
+/*   background-color: steelblue; */
+/* } */
+/*  */
+/* input[type=chat] { */
+/*   width: 150px; */
+/*   background-color: limegreen; */
+/*   color: white; */
+/*   font: 1em sans-serif; */
+/*   padding: 12px 10px; */
+/*   border-radius: 4px; */
+/*   border-color: azure; */
+/*   float: left; */
+/*   cursor: pointer; */
+/* } */
+/*  */
+/*  */
+space from the left side of the input for icons
+/* .inputWithIcon input[type="text"] {  */
+/*   padding-left: 40px; */
+/* } */
+/*  */
+background color for the icon
+/* .inputWithIcon i { */
+/*   background-color: #aaa; */
+/*   color: #fff; */
+/*   padding: 15px 15px; */
+/*   border-radius: 4px 0 0 4px; */
+/* } */
+/*  */
+/*    /* Keep the relative position for the inputWithIcon class but  */ */
+/*    /* use absolute position for the i element that contains the F */ont Awesome icon.  */
+/*    /* Similarly, specify the left value as 0, padding, and color  */property for the icon. */ 
+/* .inputWithIcon { */
+/*   position: relative; */
+/* } */
+/*   */
+/* .inputWithIcon i { */
+/*   position: absolute; */
+/*   left: 0; */
+/*   top: 9px; */
+/*   padding: 13px 6px; */
+/*   color: white; */
+/*   transition: 0.3s; */
+/* } */
+/*  */
+/*  */
+Style the container/contact section
+/* .container { */
+/*   border-radius: 8px; */
+/*   background-color: gainsboro; */
+/*   margin: 0 auto; */
+/*   padding: 15px 25px; */
+/*   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5); */
+/* } */
+/*  */
+Create three columns that float next to eachother
+/* .column3pt { */
+/*   float: left; */
+/*   width: 33.33%; */
+/*   margin-top: 6px; */
+/*   padding: 20px; */
+/* } */
+/*  */
+Clear floats after the columns
+/* .row:after { */
+/*   content: ""; */
+/*   display: table; */
+/*   clear: both; */
+/* } */
+/*  */
+Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other
+/* @media screen and (max-width: 600px) { */
+/*   .column3pt, input[type=submit] { */
+/*     width: 100%; */
+/*     margin-top: 0; */
+/*   } */
+/*  */
+/*  */
+/* .sr-only { */
+/*     position: absolute; */
+/*     width: 1px; */
+/*     height: 1px; */
+/*     padding: 0; */
+/*     margin: -1px; */
+/*     overflow: hidden; */
+/*     clip: rect(0,0,0,0); */
+/*     border: 0; */
+/* } */
+/*  */
+/* .form-control-feedback { */
+/*     position: absolute; */
+/*     top: 25px; */
+/*     right: 0; */
+/*     z-index: 2; */
+/*     width: 34px; */
+/*     height: 34px; */
+/*     text-align: center; */
+/* } */
+/*  */
+/* } */
+</style>
+<!-- <div class="maintext"> -->
+  <!-- <h1>Sublime Serenity</h1> -->
+    <!-- <p class="text-center"> S -->
+</head>
+
+<body>
+  <div class="maintext"></div>
+  <!-- <div style="text-align:center"> -->
+    <h2>Contact Us</h2>
+    <p class="text-center">Swing by for a cup of coffee, or leave us a message:</p>
+  </div>
+
+  <div class="contactcontainer">
+  <div class="row">
+
+    <div class="column3pt">
+      <form action="/action_page.php">
+        <div class="inputWithIcon">
+            <input type="text" id="fname" name="fullname" placeholder="Enter your name">
+            <i class="fa fa-solid fa-user" aria-hidden="true"></i>
+        </div>
+
+        <div class="inputWithIcon">
+            <input type="text" id="lname" name="lastname" placeholder="Enter your Last Name">
+            <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+        </div>
+
+
+        <div class="inputWithIcon">
+            <input type="text" id="email" name="emailadd" placeholder="Enter a valid email address..">
+            <i class="fa fa-solid fa-at fa-lg fa-fw" aria-hidden="true"></i>
+        </div>     
+
+        <div class="inputWithIcon">
+            <input type="text" id="phone" name="phonenum" placeholder="Enter your contact phone number">
+            <i class="fa fa-phone fa-lg fa-fw" aria-hidden="true"></i>
+        </div>
+
+        <div class="inputWithIcon">
+            <input type="text" id="checkin" name="checkin" placeholder="Arrival ">
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+        </div>
+        <input type="date" id="checkin" name="checkin" placeholder="Arrival">
+
+        <div class="inputWithIcon">
+            <input type="text" id="checkout" name="checkout" placeholder="Departure"> 
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+        </div>
+          <input type="date" id="checkout" name="checkout" placeholder="Departure">
+      </form>
+    </div>
+    
+    <div class="column3pt">
+      <form action="/action_page.php">
+        <textarea id="subject" name="subject" placeholder="Enter your message..." style="height:350px"></textarea>
+        <input type="submit" value="Submit">
+        <img src="images/whatsapp2.png">
+        <a class="phone" href="tel:0435 123 456">
+        <input type="chat" value=" Send us an SMS "></a>
+      </form>
+    </div>
+
+    <div class="column3pt">
+        <img src="images/host3.jpg" style="width:100%">
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

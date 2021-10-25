@@ -1,0 +1,113 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<!--   <head> -->
+<!--     <titl -->e>Home Page</title>
+<!--     <link --> rel="icon" href="star-solid.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<!--     <meta --> name="viewport" content="width=device-width,initial-scale=1">
+<!--     <scri -->pt src="script.js"></script>
+<!--     <scri -->pt src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<!--   </head> -->
+
+.header {
+    background-color: var(--space-cadet);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.navigation a {
+    color: var(--aero-blue);
+    padding: 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+.navigation a.active {
+    color: white;
+}
+  
+.navigation {
+    display: flex;
+    flex-direction: row;
+}
+.logo {
+    width: 60px;
+    padding: 15px;
+}
+.nav-button {
+    background-color: transparent;
+    color: var(--aero-blue);
+    font-size: 44px;
+    border-color: transparent;
+    display: none;
+} 
+
+<body>
+    <header class="header">
+      <a href="index.html">
+        <img class="logo" src="images/logoicon.jfif">
+      </a>
+      <button type="button" class="nav-button">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav class="navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+</body>
+</html>
+
+
+<div class="booking-button-promo-inline">
+    <div class="container">
+        <div><form class="booking-button-form text-center" target="_blank" rel="noopener" action="https://app-apac.thebookingbutton.com/properties/qualityresortdirect" id="bookingButtonForm_110625_550497" method="GET" autocomplete="off">
+            <input type="hidden" name="from_widget" value="true">
+            <input type="hidden" name="room_type" value="">
+            <div class="row">
+                <div class="col-xs-12 col-md-8">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-4">
+                            <div id="a-parent110625" style="position: relative" class="form-group has-feedback">
+                                <label class="control-label sr-only" for="arrival110625">Arrival</label>
+                                <input type="text" class="form-control" id="arrival110625" placeholder="Arrival">
+                                <span class="fa fa-calendar form-control-feedback"></span>
+                                <span id="arrivalCalendar110625" class="sr-only">Arrival calendar</span>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-4">
+                            <div id="d-parent110625" style="position: relative" class="form-group has-feedback">
+                                <label class="control-label sr-only" for="departure110625">Departure</label>
+                                <input type="text" class="form-control" id="departure110625" placeholder="Departure">
+                                <span class="fa fa-calendar form-control-feedback"></span>
+                                <span id="departureCalendar110625" class="sr-only">Departure calendar</span>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-4">
+                            <div class="form-group has-feedback">
+                                <label class="control-label sr-only" for="guests110625">Guests</label>
+                                <select class="form-control" id="guests110625" name="number_adults">
+                                    <option value="1"> 1 guest </option>
+                                    <option value="2" selected=""> 2 guests</option>
+                                    <option value="3"> 3 guests </option>
+                                    <option value="4"> 4 guests </option>
+                                    <option value="5"> 5 guests </option>
+                                    <option value="6"> 6 guests </option>
+                                    <option value="7"> 7 guests </option>
+                                    <option value="8"> 8 guests </option>
+                                    <option value="9"> 9 guests </option>
+                                    <option value="10"> 10 guests </option>
+                                </select><span class="glyphicon glyphicon-user form-control-feedback"></span>
+                                <span id="guestsCalendar110625" class="sr-only">Guests calendar</span>
+                            </div></div></div></div>
+                            <input type="hidden" name="locale" value="en">
+                            <input type="hidden" name="referrer" value="canvas">
+                            <div class="col-xs-12 col-md-4">
+                                <button type="submit" class="btn btn-primary btn-block">Book Now</button>
+                            </div></div></form></div></div></div>

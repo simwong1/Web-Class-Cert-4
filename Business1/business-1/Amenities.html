@@ -1,0 +1,283 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column  {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+
+/* The flip card container - set the width and height to whatever you want. 
+    We have added the border property to demonstrate that the flip itself 
+    goes out of the box on hover (remove perspective if you don't want the 3D effect) */
+    .flip-card {
+  background-color: transparent;
+  width: 350px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* 3D effect */
+
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #46d1db;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+</style>
+</head>
+<body>
+
+<h2>Responsive Column Cards</h2>
+<p>Resize the browser window to see the effect.</p>
+
+<!-- Flip Card for Facilities -->
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="images/Living Area.jpg" alt="lounge" style="width: 300px;; height: 300px;">
+            </div>
+            <div class="flip-card-back">
+                <h1> Spacious </h1> 
+                <h1>Living Area</h1>
+                <p>Your luxury apartment consists of</p>
+                <p>a spacious separate living area</p> 
+                <p>with leather furniture overlooking</p>
+                <p>a private garden for you to enjoy.</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="images/Bedroom.jpg" alt="bedroom" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+                <h1> Queen Sized </h1>
+                <h1> Bedroom </h1>
+                <p>A separate Queen sized</p>
+                <p>bedroom suite with quality linen</p> 
+                <p>also overlooks the garden.</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="images/Bathroom Tub.jpg" alt="bathtub" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+                <h1>Luxurious </h1>
+                <h1>Bathroom </h1>
+                <p>The modern elegant bathroom</p>
+                <p>has a luxurious bath that</p>
+                <p>entices you to unwind and relax</p> 
+                <p>whilst overlooking </p>
+                <p>a private courtyard fernery.</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="images/BBQ area.jpg" alt="bbq" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+                <h1>BBQ Area</h1> 
+                <p>There is an undercover area </p>
+                <p>complete with BBQ and </p>
+                <p>shady seating that offers   </p>
+                <p>plenty of space to stretch out</p>
+                <p>and enjoy that cup of freshly</p>
+                <p>brewed coffee or glass of wine.</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="images/Breakfast 1.jpg" alt="breakfast" style="width: 300px;; height: 300px;">1
+            </div>
+            <div class="flip-card-back">
+                <h1>Fresh Local  </h1> 
+                <h1>Produce </h1>
+                <p>We offer locally sourced provisions </p>
+                <p>for a hearty breakfast together </p> 
+                <p>with home-made biscuits  </p>
+                <p>and chocolates. </p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="images/KItchenette.jpg" alt="kitchenette" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+                <h1>Modern Kitchenette </h1> 
+                <p>The kitchenette provides </p>
+                <p>everything you will need </p>
+                <p>for a relaxing breakfast. </p>
+                <p>We include a coffee machine </p>
+                <p>and variety of coffee pods </p>
+                <p>for your enjoyment. </p>
+            </div>>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="images/amenities.jpg" alt="amenities" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+                <h1>Premium Amenities</h1> 
+                <p>Amenities include top quality </p>
+                <p>bedding, fluffy towels, bath robes,</p>
+                <p>vanity packs, hair dryer, </p> 
+                <p>beach towels and chairs, </p>
+                <p>a microwave and oven, a toaster, </p>
+                <p>a kettle, a sandwich maker </p>
+                <p>and BBQ tools. </p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="images/tv.jpg" alt="tv" style="width:300px;height:300px">
+            </div>
+            <div class="flip-card-back">
+                <h1>Entertainment</h1> 
+                <p>Two TVS will keep everyone </p>
+                <p>happy along with a DVD player,  </p> 
+                <p>stereo system and games galore. </p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

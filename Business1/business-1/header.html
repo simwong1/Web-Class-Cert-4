@@ -1,0 +1,237 @@
+<style>
+<head>
+
+
+body {
+    margin: 0;
+  }
+  .header {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    width: 250px;
+    padding: 5px;
+  }
+  
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+  }
+  
+  .navigation a {
+    display: block;
+    padding: 1em;
+    color:blue;
+    text-decoration: none;
+  }
+  .navigation a:hover {
+    background-color:whitesmoke;
+    color: #db7242;
+  }
+  .banner img {
+    width: 100%;
+  	background-size: cover;
+	  display: block;
+    height: auto;		
+	  justify-content: center;
+	  background-color: #5ac9dd;
+  }
+  .dropdown {
+    position: relative;
+  }
+  .dropdown > a::after {
+    content: "\25bc";
+    font-size: 70%;
+    margin-left: 0.5em;
+  }
+  .dropdown:hover .dropdown-menu {
+    max-height: 300px;
+  }
+  .dropdown-menu {
+    position: absolute;
+    background-color: white;
+    z-index: 999;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+  .dropdown-menu a {
+    white-space: nowrap;
+  }
+  /* optional */
+  .dropdown-menu a:last-child {
+    color: red;
+  }
+  
+  .dropdown-menu :nth-child(2) {
+    color: blue;
+  }
+
+  .banner title {
+  margin-bottom: 15p
+  font-size: 36px;
+  font-weight: 200;
+  width:span(0,1,1);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+  color: #db7242;
+	}
+
+  .promo,
+  .promo h3,
+  .promo a:link,
+  .promo a:visited,
+  .promo a:hover,
+  .promo a:active {
+    color: white;
+	  text-shadow: 1px 1px 8px rgb(235, 192, 192);
+    text-decoration: none;
+  }
+
+  .promo-item {
+    height: 200px;
+    line-height: 180px;
+    text-align: center;
+  }
+
+  .promo-item:hover {
+    background-size: 110%; 
+    border: 5px solid #9ddce0;
+    line-height: 170px;
+  }
+
+  .promo-item h3 {
+    font-size: 40px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+		
+  .item-1,
+  .item-2,
+  .item-3 {
+	  background-size: cover;
+	  background-position: 20% 30%;
+	}
+
+  .triplecolumn {
+    width: 33.33333333%;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+  }
+</style>
+</head>
+<body>
+
+<html>
+
+<header class="header">
+  <a href="index.html">
+    <img class="logo" src="images/new logo2.jpg">
+  </a>
+  <nav class="navigation">
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+      <a href="#">About Us</a>
+      <nav class="dropdown-menu">
+<!--         <a href="pricing.html">Pricing</a> -->
+<!--         <a href="booking.html">Booking</a> -->
+<!--         <a href="pet.html">Pet Friendly</a> -->
+				<a href="#">Apartment Information</a>
+        <a href="#">Facilities & Amenities</a>
+        <a href="#">Testimonials</a>
+        <a href="#">Highlights of Sorrento</a>
+        <a href="#">Pet Friendly Policy</a>
+        <a href="#">Pricing</a>
+        <a href="#">Terms & Conditions</a>
+      </nav>
+    </div>
+    <a href="index.html">Contact Us</a>
+    <div class="dropdown">
+      <a href="#">Sorrento Area</a>
+      <nav class="dropdown-menu">
+        <a href="restaurants.html">Restaurants</a>
+        <a href="restaurants.html">Parks</a>
+        <a href="restaurants.html">Beaches</a>
+      </nav>
+    </div>
+    <a href="contact.html">Book Now</a>
+  </nav>
+</header>
+<div class="banner">
+  <img src="images/Beachchair2.jpg">
+    <div class="banner title">
+      <h1> Sorrento by the Sea </h1>
+      <p> Luxury Accommodation </p>
+      <p><a class="button" href="#">Learn More</a></p>
+		</div>
+</div>
+
+  <!-- Promos -->
+  <div class="container-fluid">
+      <div class="row promo">
+        <a href="#">
+      <div class="col-md-4 promo-item item-1">
+        < img src="images/dog unwind.jpg">
+        <h3>
+          Unwind
+        </h3>
+      </div>
+          </a>
+          <a href="#">
+      <div class="col-md-4 promo-item item-2">
+        <img src="images/Cat Relax.jpg">
+        <h3>
+          Relax
+        </h3>
+      </div>
+          </a>
+    
+    <a href="#">
+      <div class="col-md-4 promo-item item-3">
+        <img src="images/Dog Welcome.jpg">
+        <h3>
+          Procrastinate
+        </h3>
+      </div>
+          </a>
+      </div>
+  </div><!-- /.container-fluid -->
+
+<div class="container">
+  <div class="video">
+    <iframe src="https://www.youtube.com/embed/KE0SbDBw-ok" title="YouTube v
+    </iframe>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

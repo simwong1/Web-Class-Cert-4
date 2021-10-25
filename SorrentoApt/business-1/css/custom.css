@@ -1,0 +1,516 @@
+html {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	-webkit-text-size-adjust: 100%;
+		-ms-text-size-adjust: 100%;
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+	line-height: 1.5;
+}
+
+.header {
+  /* flex-direction: column; */
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+h1 {
+	display: block;
+	margin-block-start: .67em;
+	margin-block-end: 0.67em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	font-size: 2em;
+	line-height: 1.1;
+}
+
+body {
+	padding-top: 50px;    /* Padding for .navbar-fixed-top. Change value if navbar height changes. Remove if using .navbar-static-top. */
+	color: #959595;
+	font-size: 15px;
+	background-color: white;
+	}
+	
+h1,h2, h3, h4, h5, h6 {
+	font-family: 'Segoe UI', Arial, sans-serif;
+	color: #dd845a;
+	font-weight: 400;
+	margin: 10px,0;
+	}
+
+.logo {
+	display: inline;
+	display: block;
+	width: 300px;
+	max-height: 20px ;
+	align-items: left;
+	color: white;
+	border: 1px solid cyan;
+	padding: 5px;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+}
+@media (min-width: 768px) {
+	.navbar-text {
+	  float: left;
+	  margin-right: 15px;
+	  margin-left: 15px;
+	}
+}
+.nav>li>a {
+	line-height: 20px;
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+
+li {
+    text-align: -webkit-match-parent;
+}
+
+p {
+	display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+	margin: 0 0 10px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.jumbotron {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    background-color: #eee;
+}
+
+.jumbotron p {
+    margin-bottom: 15px;
+    font-size: 36px;
+    font-weight: 200;
+}
+
+
+
+.jumbotron h1,
+.jumbotron .h1 {
+  color: inherit;
+}
+
+.jumbotron > hr {
+  border-top-color: #d5d5d5;
+}
+.container .jumbotron,
+.container-fluid .jumbotron {
+  border-radius: 6px;
+}
+.jumbotron .container {
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .jumbotron {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .container .jumbotron,
+  .container-fluid .jumbotron {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+  .jumbotron h1,
+  .jumbotron .h1 {
+    font-size: 63px;
+  }
+}
+
+
+.feature {
+	background: url('../images/Beachchair2.jpg');
+	background-size: cover;
+	background-position: bottom;
+    height: 50vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #5ac9dd;
+	color: white;
+}
+
+.feature .btn {
+	text-shadow: none;
+}
+
+div {
+	display: block;
+}
+
+.container {
+	max-width: 1024px;
+	/* background-color: lightblue; */
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 30px;
+	padding-right: 15px;
+	padding-left: 15px;
+	}
+
+@media (min-width: 768px)
+.container {
+	width: 750px;
+}
+	
+
+.text-center {
+	text-align: center;
+}
+
+.promo, .footer-map {
+	border-width: 1px;
+	border-color: #8beef5;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.promo,
+.promo h3,
+.promo a:link,
+.promo a:visited,
+.promo a:hover,
+.promo a:active {
+    color: white;
+	text-shadow: 1px 1px 8px rgb(235, 192, 192);
+    text-decoration: none;
+}
+
+.promo-item {
+    height: 200px;
+    line-height: 180px;
+    text-align: center;
+}
+
+.promo-item:hover {
+    background-size: 110%; 
+    border: 5px solid #9ddce0;
+    line-height: 170px;
+}
+
+.promo-item h3 {
+    font-size: 40px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.item-1 {
+	background: url('../images/dog\ unwind2.jpg');
+}
+	
+.item-2 {
+	background: url('../images/Cat\ Relax.jpg');
+}
+	
+.item-3 {
+	background: url('../images/Dog\ Welcome.jpg');
+}
+		
+.item-1,
+.item-2,
+.item-3 {
+	background-size: cover;
+	background-position: 20% 30%;
+}
+
+.video {
+	grid-column: span 2;
+	aspect-ratio: 16/9;
+	height: 40vh;
+	background-color: lightcoral;
+}
+	
+.video iframe {
+	width: 100%;
+	height: 100%;
+	display: block;
+	display: flex;
+}
+	  
+
+
+
+
+.featured-product > img,
+.featured-product > a > img {
+	height: 150px;
+}
+
+.featured-product h3 {
+	color: #e78152;
+	font-size: 20px;
+}
+
+.featured-product .price {
+	color: #dd845a;
+	font-size: 18px;
+}
+	
+.featured-product .price s {
+	color: #999;
+	font-size: 18px;
+}
+
+
+/* slideshow */
+.slideshow {
+	min-width: 100vw;
+	margin-bottom: 3em;
+}
+  .slide img  {
+	width: 100vw;
+	height: 70vh;
+	object-fit: cover;
+	object-position: center;
+}
+
+.map {
+	height: 350px;
+	width: 500px;
+	background-size: cover;
+	border-color: #c0bfbf;
+}
+	
+.footer-info {
+    padding: 20px 0;
+    background: #f1f1f1;
+}
+
+.footer-info,
+.footer-info a:link,
+.footer-info a:hover,
+.footer-info a:focus,
+.footer-info a:visited {
+    color: #959595;
+}
+
+.footer-info h3 {
+	color: black;
+	font-size: 18px;
+}
+    
+.footer-info-item {
+    padding: 0px 20px;
+}
+    
+footer .small-print {
+	background-color: #fff;
+	padding: 30px 0;
+	text-align: center;
+}
+
+
+/*
+*************************** 
+Override Bootstrap Classes 
+***************************
+*/
+
+/* Links */
+a {
+  color: orange;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: darkorange;
+  text-decoration: underline;
+}
+
+/* Navbar */
+.navbar-default {
+  background-color: #fff;
+  justify-content: center;
+  background-color: #5ac9dd;
+}
+.navbar-default .navbar-brand {
+  color: #dd845a;
+  height: 20px;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: sienna;
+  background-color: transparent;
+}
+
+/* Primary Buttons */
+.button {
+  color: #fff;
+  background-color: orange;
+  border-color: orange;
+}
+.button:focus,
+.button.focus {
+  color: #fff;
+  background-color: darkorange;
+  border-color: darkorange;
+}
+.button:hover {
+  color: #fff;
+  background-color: darkorange;
+  border-color: darkorange;
+}
+.button:active,
+.button.active,
+.open > .dropdown-toggle.button {
+  color: #fff;
+  background-color: darkorange;
+  border-color: darkorange;
+}
+.button:active:hover,
+.button.active:hover,
+.open > .dropdown-toggle.button:hover,
+.button:active:focus,
+.button.active:focus,
+.open > .dropdown-toggle.button:focus,
+.button:active.focus,
+.button.active.focus,
+.open > .dropdown-toggle.button.focus {
+  color: #fff;
+  background-color: darkorange;
+  border-color: darkorange;
+}
+
+.button.disabled,
+.button[disabled],
+fieldset[disabled] .button,
+.button.disabled:hover,
+.button[disabled]:hover,
+fieldset[disabled] .button:hover,
+.button.disabled:focus,
+.button[disabled]:focus,
+fieldset[disabled] .button:focus,
+.button.disabled.focus,
+.button[disabled].focus,
+fieldset[disabled] .button.focus,
+.button.disabled:active,
+.button[disabled]:active,
+fieldset[disabled] .button:active,
+.button.disabled.active,
+.button[disabled].active,
+fieldset[disabled] .button.active {
+  background-color: sandybrown;
+  border-color: sandybrown;
+}
+.button .badge {
+	color: #337ab7;
+	background-color: #fff;
+}
+
+
+.maintext {
+  width: 100%;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  float: left;
+}
+
+.triplecolumn {
+  width: 33.33333333%;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  float: left;
+}
+
+.bicolumn {
+	width: 50%;
+	position: relative;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+	float: left;
+}
+
+.qtrcolumn {
+	width: 25%;
+	position: relative;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+	float: left;
+}
+
+.promocard {
+	padding-top: 8px;
+	padding-bottom: 8px;
+	color: #777;
+	text-align: left;
+}
+
+.thumbnail .promocard {
+	padding: 9px;
+	color: #333;
+}
+
+
+
+<!--
+.carousel {
+	background: #EEE;
+	grid-column: span 2;
+	height: 30em;
+	background-color: lightcoral;
+}
+  
+.carousel-cell {
+	display: block;
+	position: relative;
+	width: 1200px;
+	height: 400px;
+	background: #8C8;
+	border-radius: 8px;
+	margin-bottom: 5em;
+	counter-increment: carousel-cell;
+}
+  
+  /* cell number */
+.carousel-cell:before {
+	display: block;
+	text-align: center;
+	content: counter(carousel-cell);
+	line-height: 10px;
+	font-size: 80px;
+	color: rgb(255, 255, 255);
+}
+
+.carousel-cell img {
+	width: 1200px;
+	height: 400px;
+	border: 1px solid white);
+	object-fit: contain;
+	align-items: center;
+  }
+
+.map {
+	grid-column: span 2;
+	aspect-ratio: 16/9;
+}
+.map iframe {
+	width: 100%;
+	height:100%;
+	display: block;
+}
+  

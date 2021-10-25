@@ -1,0 +1,61 @@
+<!doctype html>
+<title>Example</title>
+<style>
+  * {
+   box-sizing: border-box; 
+  }
+  .myForm {
+    display: flex;
+    background-color: cyan;
+    border-radius: 5px;
+    padding: 2em;
+  }
+  .message {
+   	margin-right: 2em; 
+    display: flex;
+    border-color: blue;
+    flex-direction: column;
+  }
+  .message > textarea {
+   flex: 1; 
+   min-width: 18em;
+   border-radius: 5px;
+   border-color: blue;
+  }
+  .contact {
+   	flex: 1; 
+  }
+  .contact input {
+    width: 100%;
+    border-radius: 5px;
+    border-color: blue;
+  }
+  .contact input,
+  .contact button {
+    padding: 1em;
+    margin-bottom: 1em;
+  }
+  .contact button {
+   background: blue;
+   color: white;
+   border: 0;
+  }
+</style>
+<form class="myForm">
+  <div class="message">
+    <label for="msg">Message</label>
+    <textarea id="msg"></textarea>
+  </div>
+  <div class="contact">
+    <label for="name">Name</label>
+    <input type="text" id="name">
+
+    <label for="phone">Phone Number</label>
+    <input type="text" id="phone">
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email"> 
+
+    <button type="submit">Submit</button>
+  </div>
+</form>

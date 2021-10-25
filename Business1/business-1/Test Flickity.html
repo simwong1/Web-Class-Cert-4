@@ -1,0 +1,61 @@
+Test Flickity
+    
+    <!--Include the CSS and JS library files of Flickity plugin-->
+	<!--<link rel="stylesheet" href="/path/to/flickity.css" media="screen">-->
+	<!--<script src="/path/to/flickity.pkgd.min.js"></script>-->
+    <!--Simple Slider using Flickity Plugin | HackerRahul.com-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+	<div class="container text-center">
+		<h1>Highlights of local area</h1>
+		<p> Never run out of activities to do in Sorrento.</p>
+		
+	</div>
+    
+
+    .carousel {
+        background: #EEE;
+    }
+      
+    .carousel-cell {
+        display: block;
+        width: 100%;
+        height: auto;
+        
+        flex-direction: row;
+        align-items: right; 
+        justify-content: center;
+        margin-right: 10px;
+        background: #8C8;
+        border-radius: 5px;
+        counter-increment: carousel-cell;
+    }
+      
+      /* cell number 
+    .carousel-cell:before {
+        display: block;
+        text-align: center;
+        content: counter(carousel-cell);
+        line-height: 0px;
+        font-size: 80px;
+        color: rgb(255, 255, 255);
+    }*/
+      
+    
+    <!--/.container-->
+		
+	<div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded": true }'>
+		<div class="carousel-cell"><img.src="images/winery1.jpg" alt="winery" /></div>
+		<div class="carousel-cell"><img.src="images/golf.jpg" alt="" /></div>
+		<div class="carousel-cell"><img src="images/Ferry ride.jpg" alt="" /></div>
+		<div class="carousel-cell"><img src="images/walking.jpg" alt="" /></div>
+		<div class="carousel-cell"><img src="images/art1.jpg" alt="" /></div>
+		<div class="carousel-cell"><img src="images/Shopping.jpg" alt="" /></div>
+		<div class="carousel-cell"><img src="images/Dolphine at beach.jpg" alt="" /></div>
+		<div class="carousel-cell"><img src="images/Fishing by sea.jpg" alt="" /></div>
+	</div>		
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
